@@ -43,7 +43,7 @@ public class StudentService  implements StudentServiceInter{
 			else {
 				throw new Exception();
 			}
-			Response res=new Response(false,"Successfuly created student");
+			Response res=new Response(false,"Successfully added student in database");
 			return new ResponseEntity<Response>(res,HttpStatus.OK);
 		}
 		catch(Exception e)
