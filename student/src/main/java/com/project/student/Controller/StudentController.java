@@ -32,6 +32,7 @@ public class StudentController {
 	@PostMapping("/addstudent")
 	public ResponseEntity<Response> addStudent(@RequestBody StudentDto sdto)
 	{
+		System.out.println("hi");
 		return ss.addStudent(sdto);
 	}
 	
