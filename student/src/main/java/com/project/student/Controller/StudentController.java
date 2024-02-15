@@ -38,6 +38,7 @@ public class StudentController {
 	@DeleteMapping("/deletestudent/{studentid}")
 	public ResponseEntity<Response> deleteStudent(@PathVariable String studentid)
 	{
+		System.out.println("sri");
 		return ss.removeStudent(studentid);
 	}
 	
